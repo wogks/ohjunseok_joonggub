@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:ohjunseokjunggup/animated_opacity.dart';
 import 'package:ohjunseokjunggup/drawer.dart';
+import 'package:ohjunseokjunggup/oriental.dart';
+import 'package:ohjunseokjunggup/snackbar.dart';
 
 import 'animated_container.dart';
 
@@ -55,6 +57,18 @@ class _HomeStateState extends State<HomeState> {
             title: const Text('Drwaer'),
             onTap: (){
               Navigator.push(context, MaterialPageRoute(builder: (context)=>const MyDrawer()));
+            },
+          ),
+          ListTile(
+            title: const Text('Snack Bar'),
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>const MySnackBar()));
+            },
+          ),
+           ListTile(
+            title: const Text('Orientation Builder'),
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>const MyOrientation()));
             },
           ),
         ],
