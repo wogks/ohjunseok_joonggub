@@ -19,11 +19,12 @@ class _MySnackBarState extends State<MySnackBar> {
             child: ElevatedButton(
               child: const Text('Show SnackBar'),
               onPressed: () {
-                final snackBar = SnackBar(content: const Text('나는 스낵바'),
-                action: SnackBarAction(label: 'Undo',
-                onPressed: (() {
-                  
-                }),),
+                final snackBar = SnackBar(
+                  content: const Text('나는 스낵바'),
+                  action: SnackBarAction(
+                    label: 'Undo',
+                    onPressed: (() {}),
+                  ),
                 );
                 ScaffoldMessenger.of(context).showSnackBar(snackBar);
               },
