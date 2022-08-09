@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ohjunseokjunggup/animated_opacity.dart';
 import 'package:ohjunseokjunggup/drawer.dart';
+import 'package:ohjunseokjunggup/form_validation.dart';
 import 'package:ohjunseokjunggup/oriental.dart';
 import 'package:ohjunseokjunggup/snackbar.dart';
 import 'package:ohjunseokjunggup/tab_controller.dart';
@@ -88,6 +89,15 @@ class _HomeStateState extends State<HomeState> {
                   context,
                   MaterialPageRoute(
                       builder: (context) => const MyTabController()));
+            },
+          ),
+          ListTile(
+            title: const Text('Form Validation'),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const MyFormValidation()));
             },
           ),
         ],
