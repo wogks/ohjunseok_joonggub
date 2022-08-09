@@ -1,5 +1,7 @@
 
 import 'package:flutter/material.dart';
+import 'package:ohjunseokjunggup/animated_opacity.dart';
+import 'package:ohjunseokjunggup/drawer.dart';
 
 import 'animated_container.dart';
 
@@ -44,9 +46,15 @@ class _HomeStateState extends State<HomeState> {
             },
           ),
           ListTile(
-            title: const Text('Animated Container'),
+            title: const Text('Animated Opacity'),
             onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>const MyAnimatedContainer()));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>const MyAnimatedOpacity()));
+            },
+          ),
+          ListTile(
+            title: const Text('Drwaer'),
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>const MyDrawer()));
             },
           ),
         ],
